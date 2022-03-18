@@ -6,46 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
     <title>searchbar</title>
 </head>
 
 <body>
     <div class="search-wrapper">
         <label for="search">search Users</label>
-        <input type="search" id="search">
+        <input type="search" id="search" data-search>
     </div>
-    <div class="user-cards">
+    <div class="user-cards" data-user-cards></div>
+    <template data-user>
         <div class="user-card">
-            <div class="header">name</div>
-            <div class="body">email@gmail.com</div>
-            <div class="footer"></div>
+            <div class="header" data-header></div>
+            <div class="body" data-body></div>
+            <div class="footer" data-footer></div>
         </div>
-        <div class="user-card">
-            <div class="header">name</div>
-            <div class="body">email@gmail.com</div>
-            <div class="footer"></div>
-        </div>
-        <div class="user-card">
-            <div class="header">name</div>
-            <div class="body">email@gmail.com</div>
-            <div class="footer"></div>
-        </div>
-        <div class="user-card">
-            <div class="header">name</div>
-            <div class="body">email@gmail.com</div>
-            <div class="footer"></div>
-        </div>
-        <div class="user-card">
-            <div class="header">name</div>
-            <div class="body">email@gmail.com</div>
-            <div class="footer"></div>
-        </div>
-        <div class="user-card">
-            <div class="header">name</div>
-            <div class="body">email@gmail.com</div>
-            <div class="footer"></div>
-        </div>
-    </div>
+    </template>
 </body>
 
 </html>

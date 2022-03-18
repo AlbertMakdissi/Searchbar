@@ -10,15 +10,15 @@ input {
 
 .user-cards {
   display: grid;
-  grid-template-columns: repeat(autofill, minmax(150px, 1fr));
-  gap: 0.25rem;
+  gap: 1.25rem;
   margin-top: 1rem;
 }
 
 .user-card {
-  border: 1px solid black;
+  box-shadow: 5px 10px 18px #9b9b9b;
   background-color: white;
-  padding: 0.5rem;
+  padding: 1.5rem;
+  border-radius: 5px;
 }
 
 .user-card > .header {
@@ -30,6 +30,17 @@ input {
   font-size: 2rem;
   color: #777;
 }
+
+.user-card > .footer {
+  font-size: 2rem;
+  color: rgb(0, 174, 197);
+}
 .hide {
   display: none;
+}
+
+@media (min-width: 900px) {
+  .user-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

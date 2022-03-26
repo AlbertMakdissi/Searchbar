@@ -36,12 +36,10 @@ input {
   transition: background-color 300ms ease-in-out;
   position: absolute;
   top: 0rem;
-  left: 10rem;
-  right: 10rem;
+  left: 0rem;
+  right: 0rem;
   z-index: 1;
   background-color: rgba(7, 36, 86, 0.06);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
 .user-card:hover::before {
   background-color: rgb(15, 163, 189);

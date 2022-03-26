@@ -25,11 +25,27 @@ input {
   border-radius: 5px;
   cursor: pointer;
   transition-duration: 0.3s;
+  position: relative;
 }
 .user-card:hover {
   transform: scale(1.02);
 }
-
+.user-card::before {
+  content: "";
+  height: 6px;
+  transition: background-color 300ms ease-in-out;
+  position: absolute;
+  top: 0rem;
+  left: 10rem;
+  right: 10rem;
+  z-index: 1;
+  background-color: rgba(7, 36, 86, 0.06);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.user-card:hover::before {
+  background-color: rgb(15, 163, 189);
+}
 .user-card > .header {
   margin-bottom: 0.25rem;
   font-size: 2.5rem;

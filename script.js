@@ -26,7 +26,7 @@ searchField.addEventListener("input", (event) => {
       user.name.toLowerCase().includes(inputValue) ||
       user.email.toLowerCase().includes(inputValue) ||
       user.username.toLowerCase().includes(inputValue);
-    user.element.classList.toggle("hide", !isVisible);
+    user.element.classList.toggle("vanish", !isVisible);
   });
 });
 

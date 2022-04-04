@@ -1,3 +1,27 @@
+.skeleton-loading {
+  opacity: 0.7;
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+@keyframes skeleton-loading {
+  from {
+    background-color: hsl(200, 20%, 70%);
+  }
+  to {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+.skeleton-content {
+  width: 60%;
+  height: 0.9rem;
+  margin-bottom: 0.35rem;
+  border-radius: 0.125rem;
+}
+
+.footer .skeleton-content {
+  margin-bottom: 0;
+  width: 40%;
+}
+
 .search-wrapper {
   display: flex;
   flex-direction: column;

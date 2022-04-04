@@ -2,6 +2,11 @@ const userData = document.querySelector("[data-user]");
 const userDataCards = document.querySelector("[data-user-cards]");
 const searchField = document.querySelector("[data-search]");
 let users = [];
+
+//fill page with ten placeholder cards
+for (let i = 1; i <= 10; i++) {
+  userDataCards.append(userData.content.cloneNode(true));
+}
 //option 1//
 /* fetch("https://jsonplaceholder.typicode.com/users")
   .then((res) => res.json())
@@ -35,6 +40,7 @@ const url = "https://jsonplaceholder.typicode.com/users";
 async function getUserData() {
   const response = await fetch(url);
   const data = await response.json();
+  userDataCards.innerHTML = ""; //clearing placeholder data
   users = data.map((user) => {
     const card = userData.content.cloneNode(true).children[0];
     const header = card.querySelector("[data-header]");

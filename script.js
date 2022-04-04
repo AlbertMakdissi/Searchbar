@@ -30,7 +30,7 @@ searchField.addEventListener("input", (event) => {
   });
 });
 
-//option2 ajax approach
+//option2 async await approach
 const url = "https://jsonplaceholder.typicode.com/users";
 async function getUserData() {
   const response = await fetch(url);

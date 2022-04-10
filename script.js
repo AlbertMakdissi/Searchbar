@@ -2,7 +2,7 @@ const userData = document.querySelector("[data-user]");
 const userDataCards = document.querySelector("[data-user-cards]");
 const searchField = document.querySelector("[data-search]");
 let users = [];
-
+let inputValue;
 //fill page with ten placeholder cards
 for (let i = 1; i <= 10; i++) {
   userDataCards.append(userData.content.cloneNode(true));
@@ -24,7 +24,22 @@ for (let i = 1; i <= 10; i++) {
     });
   }); */
 
+// const updateDebounceText = debounce((value) => {
+//   inputValue = value;
+// }, 100);
+
+// function debounce(callback, delay = 1000) {
+//   let timeout;
+//   return (...args) => {
+//     clearTimeout(timeout);
+//     timeout = setTimeout(() => {
+//       callback(...args);
+//     }, delay);
+//   };
+// }
+
 searchField.addEventListener("input", (event) => {
+  // updateDebounceText(event.target.value);
   const inputValue = event.target.value.toLowerCase();
   users.forEach((user) => {
     const isVisible =

@@ -47,14 +47,6 @@ function debounce(callback, delay = 1000) {
 
 searchField.addEventListener("input", (event) => {
   updateDebounceText(event.target.value);
-  // const inputValue = event.target.value.toLowerCase();
-  // users.forEach((user) => {
-  //   const isVisible =
-  //     user.name.toLowerCase().includes(inputValue) ||
-  //     user.email.toLowerCase().includes(inputValue) ||
-  //     user.username.toLowerCase().includes(inputValue);
-  //   user.element.classList.toggle("vanish", !isVisible);
-  // });
 });
 
 //option2 async await approach

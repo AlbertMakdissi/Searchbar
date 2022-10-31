@@ -23,7 +23,6 @@ for (let i = 1; i <= 10; i++) {
       userDataCards.append(card);
     });
   }); */
-
 const updateDebounceText = debounce((value) => {
   const inputValue = value.toLowerCase();
   users.forEach((user) => {
